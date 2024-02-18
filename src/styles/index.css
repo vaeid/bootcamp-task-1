@@ -51,3 +51,100 @@ button {
   cursor: pointer;
   outline: inherit;
 }
+.text-primary {
+  color: var(--color-primary-900);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.container {
+  margin: 3rem auto;
+  padding: 2rem;
+  max-width: 1366px;
+}
+.title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 4rem;
+}
+.requests {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+.request {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+.request__desc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.request__upload {
+  font-size: 1.6rem;
+}
+
+.badge {
+  font-size: 1.8rem;
+  border-radius: 6px;
+  padding: 0.65rem 1.45rem;
+  margin-left: 0.5rem;
+}
+
+.badge--info {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-900);
+}
+.request__title {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.request__id {
+  font-size: 1.2rem;
+}
+.request__user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.avatar {
+  width: 40px;
+  border-radius: 8px;
+}
+.request__user span {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.request__action {
+  display: flex;
+
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+.request__action span {
+  font-size: 1.2rem;
+}
+.btn {
+  border-radius: 8px;
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+.btn-success {
+  background-color: var(--color-success);
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .requests {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .requests {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
